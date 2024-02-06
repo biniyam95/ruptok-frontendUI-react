@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.modal-heading {
+  @apply font-semibold text-green-700;
+}
+
+.modal-email-input {
+  @apply mt-1 p-2 w-full border rounded-md 
+  focus:outline-none focus:ring-1 focus:ring-green-500
+      invalid:border-pink-500 invalid:text-pink-600
+      focus:invalid:border-pink-500 focus:invalid:ring-pink-500;
+}
+
+.modal-fields {
+  @apply mt-1 p-2 w-full border rounded-md 
+  focus:outline-none focus:ring-1 focus:ring-green-500
+  invalid:border-pink-500;
+}
+
+.modal-label {
+  @apply block text-sm font-bold text-gray-500;
+}
+
+.modal-addUser {
+  @apply bg-green-500 text-white p-2 rounded-md font-medium;
+}

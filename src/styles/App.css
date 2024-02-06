@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app-container {
+  @apply md:grid md:grid-cols-5;
+}
+
+.sidebar {
+  @apply md:col-span-1
+  bg-forestGreen
+  h-screen
+  p-4;
+}
+
+.content-box {
+  @apply w-full md:col-span-4 rounded-tl-3xl bg-SlateGray p-4 shadow-2xl shadow-emerald-600;
+}
+
+
+.add-btn {
+  @apply bg-forestGreen text-white font-semibold p-2 shadow-md rounded-md cursor-pointer 
+  w-36 text-center hover:text-forestGreen hover:bg-white hover:font-bold 
+  transition ease-out duration-500;
+}
+
+.customer-list {
+  @apply font-bold   text-gray-600 text-lg;
+}
+
+.topbar {
+  @apply md:flex justify-between items-center;
+}
+
+.topbar-right {
+  @apply md:flex /* border-2 */ space-x-6 items-center;
+}
+
+.topbar-left {
+  @apply flex;
+}
+
+.sidebar-title {
+  @apply text-gray-200 flex space-x-4;
+}
+
+.nav-itemList {
+  @apply p-4;
+}
+
+.nav-itemList {
+  @apply space-y-4 mt-2;
+}
+
+.nav-item {
+  @apply text-gray-200 flex space-x-4 p-4 rounded-lg
+  hover:bg-lightForestGreen hover:shadow-lg;
+}
+
+.topbar-icons {
+  @apply bg-searchColor text-white p-2 rounded-lg;
+}
+
+.table-td{
+  @apply px-6 py-4 whitespace-nowrap bg-white
+}
+
+
+.table-head{
+  @apply px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider
+}
+
+
